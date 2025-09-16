@@ -20,6 +20,9 @@ main {
 h1, h2 {
     color: #333;
 }
+header h1 {
+    color: #fff;
+}
 /* 基本はPC用のスタイルを記述 */
 body {
     font-family: sans-serif;
@@ -48,6 +51,28 @@ body {
     background-color: #f9f9f9;
     border-left: 5px solid #333;
 }
-.work-item h3 {
-    margin-top: 0;
+/* ▼▼▼ ダークモード用のスタイルを追加 ▼▼▼ */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .work-item {
+    background-color: #2c2c2c;
+    border-left-color: #007bff;
 }
